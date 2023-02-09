@@ -95,7 +95,7 @@ h3{
     font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
-    margin-bottom: 20px;
+    margin: 0 auto 20px auto;
     border-radius: 8;
   }
   .btn:hover {
@@ -111,7 +111,7 @@ h3{
 .contact-me{
     
     padding-bottom: 15px;
-    margin-bottom:20px;
+    margin:0 auto 20px auto ;
 }
 
 hr {
@@ -156,4 +156,9 @@ a:hover {
 
 .copyright{
     color: #EAF6F6;
+}
+
+.get {
+
+    margin: 0 auto 20px auto;
 }
