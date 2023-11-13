@@ -1,76 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-   
-    
-    <title>Gabriel Baje</title>
-    <link rel="stylesheet" href=" css/styles.css">
-    <link rel="icon" href ="favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
-
-</head>
-<body>
-    
-    <div class ="top-container">
-        <img class= 'top-cloud' src = "images/clouder.png" alt="cloud-img"> 
-
-        <h1>I'm Gabriel</h1>
-        <h2>A <span><u>pro</u></span>grammer.</h2>
-        <img class="bottom-cloud" src = "images/clouder.png" alt="cloud-img">
-        <img src = "images/mountains.png" alt="mountain-img">
+    <head>
+        <title>Gabriel Baje</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/d509fa1764.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Playpen+Sans:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+    </head>
+    <body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">GB</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#top">Welcome</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#middle">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#bottom">Accomplishments</a>
+        </li>        
+         
+       
     </div>
-    
-    <div class="middle-container">
-        <div class="profile">
-           <img src="images/GabrielBaje.jpeg" alt="Gabriel_baje-img">
-            <h2>Hello.</h2>
-            <p class="intro-class"> Mathematics and Computing Science graduate currently working as a tutor at DWU. Avid programmer!</p>
-            <hr>
-          </div>
-        
-          <div class="skills">
-
-            <h2>My Skills.</h2>
-              <div class="skill-row">
-                <img class="skills-img" src="images/skill.png" alt="skill-icon">
-                <h3>Data Science and Machine learning</h3>
-                <p>Experienced with using Excel and Python in data visualization, data preprocessing, training and testing Machine Learning systems.</p>
-              </div>
-
-          <div class="skill-row">
-            <img class="web-dev" src="images/webdev.png" alt="web-dev-icon">
-            <h3>Web Development</h3>
-             <p class ='web-dev-desc'>Backend development with experience in front-end utilizing HTML5, CSS, JavaScript and Django.</p>
-            <hr>
-             
+  </div>
+</nav>
+        <div class='header' id='top'>
+            <div class = "container text-center">
+                <div class = "row">
+                    <div class= 'welcome-container col-md-12 col-sm-12 '>
+                        <h1 class = 'welcome-message'> Hi! I'm Gabriel </h1>
+                    </div>
+                    
+                    <div class = "col-lg-6 col-md-12 col-sm-12">
+                        <img src = 'assets/images/gbaje.JPG' id = 'profile-image' alt='Gabriel Baje'>
+                    </div>
+                    <div class = "col-lg-6 col-md-12 col-sm-12">
+                        <div class='intro'>
+                            <table>
+                                <tr>
+                                    <td class= intro-header> <h3> Data Science Enthusiast and Web Developer </h3> </td>
+                                </tr>
+                                <tr>
+                                    <td> Skilled programmer and developer with an acute interest in data science. With more than half a decade's experience in the fields of mathematics
+                                            and computing science.
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      
-       </div>
-            
-     
-      
-   </div>
-   <div class="contact-me">
+
+        <div class='skills' id='middle'>
+            <div class='container text-center'>
+                <div class='row1'>
+                        <h2> Data Science </h2>
+                        
+                            <img class ='skill-icon1' src = 'assets/icon/datascience.svg' alt = 'data science'>
+                   
+                            <p class='skill1'> 
+Experienced in leveraging Python for a wide range of tasks, including proficiently handling data visualization, conducting comprehensive data preprocessing, and executing the training and testing phases of machine learning systems.<p>
+                        </div>
+                        <div class='row2'>
+                        <div class='col-lg-12 col-md-12' >
+                            <h2> Web Development </h2>
+                            <img class='skill-icon2' src = 'assets/icon/webdev.svg' alt= 'web development'>
+                            <p class='skill2'> 
+Versatile in backend development, with a strong foundation in front-end technologies such as HTML5, CSS, and JavaScript. Proficient in utilizing Django and PHP to seamlessly integrate both aspects of web development, ensuring robust and dynamic applications. Additionally, experienced in database management to enhance data-driven functionalities and optimize overall system performance. <p>
+                        </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='accomplishments' id='bottom'>
+    
+        
+            <div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets\images\Gabriel_Baje_Udemy_Certificate_of_Completion_DataScience_and_ML.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets\images\accom1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets\images\accom2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets\images\accom3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </button>
+</div>
+ 
+
+        </div>
+        <div class="contact-me">
                 <h2 class='get'>Get In Touch</h2>
     
                 <p> </p>
                 <a class="btn" href="mailto:bajegabriel@gmail.com">CONTACT ME</a>
               </div>
 
-        <div class='bottom-container'>
-             
-
-           <a class="footer-link" href="https://www.linkedin.com/in/gabriel-baje-166b571aa/">LinkedIn</a>
-           <p class="copyright">© Gabriel Baje.</p>
-         
+        <div class ='footer'>
+              <a class="footer-link" href="https://www.linkedin.com/in/gabriel-baje-166b571aa/"><i class="fa-brands fa-linkedin"></i></a>
+           <p class="copyright">© Gabriel Baje</p>
         </div>
-    
-    </div>
-          
-      
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
 </html>
