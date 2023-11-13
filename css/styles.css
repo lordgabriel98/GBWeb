@@ -34,6 +34,7 @@ h3{
     padding-top: 5%;   
     color: #818FB4;
     height: 100vh;
+    display: flex;
 }
 
 .welcome-container{
@@ -60,6 +61,7 @@ h3{
     padding-top: 5%;
     padding-bottom: 20%;
     color:#F9F3CC;
+    display: flex;
     
     
     
