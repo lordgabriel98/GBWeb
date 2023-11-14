@@ -71,7 +71,6 @@ h3{
 .row1{
 
     margin: 40px auto 10px auto;
-    display: inline-block;
     text-align: justify;
     align-items: center;
     display: flex;
@@ -79,7 +78,6 @@ h3{
 
 .row2{
    margin: 40px auto 10px auto;
-    display: inline-block;
     text-align: justify;
     align-items: center; 
     padding-bottom: 10px;
