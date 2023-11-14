@@ -8,6 +8,7 @@ body {
     min-height: 100vh; /* Set minimum height to 100% of viewport height */
     display: flex;
     flex-direction: column;
+    min-width: 100vh;
 }
 
 h3{
@@ -61,7 +62,7 @@ h3{
     padding-top: 5%;
     padding-bottom: 20%;
     color:#F9F3CC;
-    display: flex;
+    display: inline-block;
     
     
     
