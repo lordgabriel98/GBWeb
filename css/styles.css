@@ -181,5 +181,23 @@ h3{
     margin-top:20px;
   
 }
+@media only screen and (min-width: 768px) {
+  
+    .welcome-message {
+        font-size: 4rem;
+    }
+
+    .skill-icon {
+        width: 128px;
+        height: 128px;
+    }
+
+    #profile-image {
+        width: 30%;
+        margin: 10px;
+    }
+}
+
+
 
 
