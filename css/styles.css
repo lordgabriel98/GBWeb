@@ -23,9 +23,7 @@ h3{
     margin-left:auto;
     padding-left: 10px;
     padding-right: 10px;
-    margin-right: auto;
-    
-    
+    margin-right: auto;   
     
 }
 .header{
@@ -55,7 +53,7 @@ h3{
      padding-bottom: 20px;
 }
 
-.skills{
+.projects{
     
     height: 100vh;
     background-color: #818FB4;
@@ -63,9 +61,18 @@ h3{
     padding-bottom: 20%;
     color:#F9F3CC;
     display: inline-block;
+
+}
+
+
+.skills{
     
-    
-    
+    height: 100vh;
+    background-color:#F9F3CC ;
+    padding-top: 5%;
+    padding-bottom: 20%;
+    color:#818FB4;
+    display: inline-block;
 
 }
 
@@ -112,11 +119,13 @@ h3{
     text-align: center;
 }
 
-.accomplishments{
+.certifications{
+    background-color: #818FB4;
     display: flex;
     align-items: center;
     height:100vh;
     justify-content: center;
+    color:#F9F3CC;
 }
 #carouselExample{
     align-items: center;
@@ -125,8 +134,13 @@ h3{
 
 }
 
+.carousel{
+    position: relative;
+    z-index: 0; 
+}
+
 .carousel-inner{
-    max-height: 600px;
+    aspect-ratio: 16/9;
 }
 
 .carousel-inner img {
@@ -135,17 +149,37 @@ h3{
     object-fit: cover;
 }
 
-.accomplishments h2{
+.section-header{
+    margin-bottom: 1rem;
+    text-align: center;
+    z-index: 1;
+}
+
+#topProject{
+    margin-bottom: auto;
+}
+
+#bottomProject{
+    margin-top: auto;
+}
+
+.certifications h2{
 
     text-align: center;
         
 }
 
+#second ul li {
+  list-style-type: none; /* Better than inline styles */
+  padding: 4px 0;
+}
+
 .footer{
-    background-color: #818FB4;
+    background-color:#818FB4 ;
     margin-top: 20px;
     justify-content: center;
     text-align: center;
+    color:#F9F3CC;
 }
 
 .btn {
@@ -173,13 +207,15 @@ h3{
     background-image: -ms-linear-gradient(top, #818FB4, #818FB4);
     background-image: -o-linear-gradient(top, #818FB4, #818FB4);
     background-image: linear-gradient(to bottom, #818FB4, #818FB4);
+    color: white;
     text-decoration: none;
   }
 
 .contact-me{
-    
+    background-color: #F9F3CC;
     text-align: center;
-    margin-top:20px;
+    margin-top:10px;
+    color:#818FB4;
   
 }
 @media only screen and (min-width: 768px) {
