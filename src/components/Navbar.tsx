@@ -1,7 +1,9 @@
 function Navbar(){
 
     return (
-        <nav className="relative flex items-center justify-between px-8 py-5">
+        <nav className="border-t-4 border-teal-500 border-gray-200 border-b  
+        relative flex items-center justify-between 
+        px-40 py-5">
             <div className="text-xl font-bold">
                 Gabriel Baje
             </div>
