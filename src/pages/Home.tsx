@@ -1,5 +1,6 @@
 import Hero from '../components/Hero';
 import Projects from '../components/Projects'
+import Footer from '../components/Footer';
 
 function Home(){
 
@@ -9,7 +10,9 @@ function Home(){
         <div className="mx-auto my-1 h-px max-w-6xl bg-slate-200"></div>
         
         <Projects />
+        <Footer />
         </>
+        
 
     )
 
