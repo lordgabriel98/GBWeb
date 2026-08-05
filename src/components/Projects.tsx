@@ -12,8 +12,8 @@ import { FaGithub } from "react-icons/fa6";
 
 function Projects(){
 
-    return(<div className='max-auto flex flex-col'>
-            <div className="max-auto flex flex-row items-center justify-between px-50 py-10">
+    return(<div className='mx-auto flex flex-col'>
+            <div className="flex flex-row items-center justify-between px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
                 
                 <div className="max-w-2xl text-left">
                     <p className="text-gray-400 text-sm uppercase font-semibold">Featured Projects</p>
@@ -24,7 +24,7 @@ function Projects(){
                 
             </div>
         
-        <div className="max-auto flex flex-row gap-10 px-40 py-5">
+        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
             <Project year="2025" title="ICTMS" 
                 description="Job ticketing and task allocation system for the RPNGC ICT Directorate."
                 technologies={[

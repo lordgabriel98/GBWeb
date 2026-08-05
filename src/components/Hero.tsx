@@ -5,7 +5,7 @@ import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
 function Hero(){
 
     return (
-        <section className="max-auto px-40 py-24">
+        <section className="mx-auto px-6 py-24 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
             <h4 className="text-sm text-teal-700 font-semibold mb-4 tracking-widest uppercase relative">Software Developer</h4>
             <h2 className="text-6xl mb-10 font-bold">
             Building intentional<br></br> <span style={{

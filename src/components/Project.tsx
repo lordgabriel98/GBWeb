@@ -11,7 +11,7 @@ interface MyProjectProps{
 function Project({year, title, description, technologies}: MyProjectProps){
     
     return(
-        <div className="bg-gray-200 w-1/3 rounded-lg px-5 py-10 border-1 border-slate-300">
+        <div className="bg-gray-200 w-full rounded-lg px-5 py-10 border-1 border-slate-300">
 
             <p className="text-xs mb-4">{year}</p>
 
@@ -19,7 +19,7 @@ function Project({year, title, description, technologies}: MyProjectProps){
 
             <p className="text-gray-700 text-sm">{description}</p>
 
-            <div className="flex gap-2 mt-6">
+            <div className="flex flex-wrap gap-2 mt-6">
                 {technologies.map((tech)=>(
                     <Technologies
                         key={tech.name}

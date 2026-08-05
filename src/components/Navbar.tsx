@@ -3,7 +3,7 @@ function Navbar(){
     return (
         <nav className="border-t-4 border-teal-500 border-b border-gray-200  
         relative flex items-center justify-between 
-        px-40 py-5">
+        px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
             <div className="text-xl font-bold">
                 <span style={{
                     backgroundImage: "linear-gradient(90deg, #0d9488, #7c3aed)",
