@@ -56,7 +56,7 @@ function Projects(){
             <Project year="2024" title="PNGRO Website"
                 description="Official website for Papua New Guinea Outreach Inc."
                 technologies={[
-                    {name: "Php",
+                    {name: "PHP",
                         icon: <SiPhp />
                     },
                     {name: "HTML5",
