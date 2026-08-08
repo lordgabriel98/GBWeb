@@ -25,6 +25,7 @@ function Project({year, title, description, technologies}: MyProjectProps){
                         key={tech.name}
                         name={tech.name}
                         icon={tech.icon}
+                        color={tech.color}
                     />
                 ))}
             </div>

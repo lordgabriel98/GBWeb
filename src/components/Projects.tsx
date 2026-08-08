@@ -30,12 +30,15 @@ function Projects(){
                 technologies={[
                     {name: "Express.js",
                         icon: <IoLogoJavascript />
+                    , color: "yellow"
                     },
                     {name: "Node.js",
                         icon: <FaNodeJs />
+                        ,color: "green"
                     },
                     {name: "MySQL",
                         icon: <SiMysql />
+                    ,color: "blue"
                     }
                 ]}/>
 
@@ -44,12 +47,15 @@ function Projects(){
                 technologies={[
                     {name: "Laravel",
                         icon: <FaLaravel />
+                    ,color: "red"
                     },
                     {name: "Bootstrap",
                         icon: <SiBootstrap />
+                        ,color: "purple"
                     },
                     {name: "GitHub",
                         icon: <FaGithub />
+                        ,color: "slate"
                     }
                 ]}/>
 
@@ -58,12 +64,15 @@ function Projects(){
                 technologies={[
                     {name: "PHP",
                         icon: <SiPhp />
+                        ,color: "red"
                     },
                     {name: "HTML5",
                         icon: <TiHtml5 />
+                        ,color: "orange"
                     },
                     {name: "Bootstrap",
                         icon: <SiBootstrap />
+                        ,color: "purple"
                     }
                 ]} />
         </div>
