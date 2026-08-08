@@ -1,6 +1,7 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
+import { Link } from "react-router-dom";
 
 function Hero(){
 
@@ -24,7 +25,7 @@ function Hero(){
 
         <div className="flex flex-row items-start gap-10 mb-3">
             
-                <a className="bg-gradient-to-r from-[#0d9488] to-[#7c3aed] text-white text-sm px-4 py-2 rounded-lg hover:opacity-90" href="#"> View Projects <FontAwesomeIcon icon={faArrowRight} /> </a>
+                <Link className="bg-gradient-to-r from-[#0d9488] to-[#7c3aed] text-white text-sm px-4 py-2 rounded-lg hover:opacity-90" to="/projects"> View Projects <FontAwesomeIcon icon={faArrowRight} /> </Link>
 
                 <a className="border-1 border-gray-200 px-4 py-2 rounded-lg text-sm hover:bg-slate-50" href="#"> Get in Touch </a>
             
