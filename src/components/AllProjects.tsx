@@ -1,6 +1,4 @@
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import Project from './Project';
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaLaravel } from "react-icons/fa";
 import { SiPhp } from "react-icons/si";
@@ -10,7 +8,7 @@ import { FaNodeJs } from "react-icons/fa6";
 import { SiMysql } from "react-icons/si";
 import { FaGithub } from "react-icons/fa6";
 
-function Projects(){
+function AllProjects(){
 
     return(<div className='mx-auto flex flex-col'>
         
@@ -65,10 +63,59 @@ function Projects(){
                         ,color: "purple"
                     }
                 ]} />
+                <Project year="2024" title="NOSS 2023"
+                description="Jupyter notebook file used to analyze the NOSS data for 2023"
+                technologies={[
+                    {name: "Python",
+                        icon: <SiPhp />
+                        ,color: "red"
+                    },
+                    {name: "Pandas",
+                        icon: <TiHtml5 />
+                        ,color: "orange"
+                    },
+                    {name: "Matplotlib",
+                        icon: <SiBootstrap />
+                        ,color: "purple"
+                    }
+                ]} />
+                
+                <Project year="2023" title="PLTable"
+                description="A Python program to fetch the Premier League table to the terminal."
+                technologies={[
+                    {name: "Python",
+                        icon: <SiPhp />
+                        ,color: "red"
+                    },
+                    {name: "Pandas",
+                        icon: <TiHtml5 />
+                        ,color: "orange"
+                    },
+                    {name: "HTML5",
+                        icon: <TiHtml5 />
+                        ,color: "orange"
+                    }
+                ]} />
+                
+                <Project year="2025" title="PNG Scholars"
+                description="Statistical analysis and data visualization for PNG Scholars research."
+                technologies={[
+                    {name: "Python",
+                        icon: <SiPhp />
+                        ,color: "red"
+                    },
+                    {name: "Jupyter",
+                        icon: <TiHtml5 />
+                        ,color: "orange"
+                    },
+                    {name: "Pandas",
+                        icon: <SiBootstrap />
+                        ,color: "purple"
+                    }
+                ]} />
         </div>
     
     </div>)
 }
 
-export default Projects
-
+export default AllProjects;
