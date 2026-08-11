@@ -9,6 +9,8 @@ import { SiBootstrap } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa6";
 import { SiMysql } from "react-icons/si";
 import { FaGithub } from "react-icons/fa6";
+import { FaPython } from "react-icons/fa6";
+
 
 function Projects(){
 
@@ -54,7 +56,7 @@ function Projects(){
                 technologies={[
                     {name: "PHP",
                         icon: <SiPhp />
-                        ,color: "red"
+                        ,color: "purple"
                     },
                     {name: "HTML5",
                         icon: <TiHtml5 />

@@ -7,6 +7,11 @@ import { SiBootstrap } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa6";
 import { SiMysql } from "react-icons/si";
 import { FaGithub } from "react-icons/fa6";
+import { FaPython } from "react-icons/fa6";
+import { SiNumpy } from "react-icons/si";
+import { SiJupyter } from "react-icons/si";
+import { LuChartNoAxesCombined } from "react-icons/lu";
+import { SiPandas } from "react-icons/si";
 
 function AllProjects(){
 
@@ -52,7 +57,7 @@ function AllProjects(){
                 technologies={[
                     {name: "PHP",
                         icon: <SiPhp />
-                        ,color: "red"
+                        ,color: "violet"
                     },
                     {name: "HTML5",
                         icon: <TiHtml5 />
@@ -67,16 +72,16 @@ function AllProjects(){
                 description="Jupyter notebook file used to analyze the NOSS data for 2023"
                 technologies={[
                     {name: "Python",
-                        icon: <SiPhp />
-                        ,color: "red"
+                        icon: <FaPython />
+                        ,color: "python"
                     },
-                    {name: "Pandas",
-                        icon: <TiHtml5 />
+                    {name: "NumPy",
+                        icon: <SiNumpy/>
                         ,color: "orange"
                     },
                     {name: "Matplotlib",
-                        icon: <SiBootstrap />
-                        ,color: "purple"
+                        icon: <LuChartNoAxesCombined />
+                        ,color: "violet"
                     }
                 ]} />
                 
@@ -84,12 +89,12 @@ function AllProjects(){
                 description="A Python program to fetch the Premier League table to the terminal."
                 technologies={[
                     {name: "Python",
-                        icon: <SiPhp />
-                        ,color: "red"
+                        icon: <FaPython />
+                        ,color: "python"
                     },
                     {name: "Pandas",
-                        icon: <TiHtml5 />
-                        ,color: "orange"
+                        icon: <SiPandas />
+                        ,color: "black"
                     },
                     {name: "HTML5",
                         icon: <TiHtml5 />
@@ -101,16 +106,16 @@ function AllProjects(){
                 description="Statistical analysis and data visualization for PNG Scholars research."
                 technologies={[
                     {name: "Python",
-                        icon: <SiPhp />
-                        ,color: "red"
+                        icon: <FaPython />
+                        ,color: "python"
                     },
                     {name: "Jupyter",
-                        icon: <TiHtml5 />
+                        icon: <SiJupyter />
                         ,color: "orange"
                     },
                     {name: "Pandas",
-                        icon: <SiBootstrap />
-                        ,color: "purple"
+                        icon: <SiPandas />
+                        ,color: "black"
                     }
                 ]} />
         </div>

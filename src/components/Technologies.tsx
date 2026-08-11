@@ -6,7 +6,10 @@ const colorStyles = {
     yellow: "bg-yellow-100 text-yellow-700",
     slate: "bg-slate-100 text-slate-700",
     green: "bg-green-100 text-green-700",
-    orange: "bg-orange-100 text-orange-700"
+    orange: "bg-orange-100 text-orange-700",
+    black: "bg-black-100 text-black-700",
+    python: "bg-blue-100 text-blue-800",
+    violet: "bg-violet-100 text-violet-700"
 };
 
 export interface TechnologyProps{

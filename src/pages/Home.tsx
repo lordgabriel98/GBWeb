@@ -3,6 +3,7 @@ import Projects from '../components/Projects'
 import Footer from '../components/Footer';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
+import { Link } from 'react-router-dom';
 
 function Home(){
 
@@ -16,7 +17,7 @@ function Home(){
                     <p className="text-gray-400 text-sm uppercase font-semibold">Featured Projects</p>
                 </div>
                 <div className="text-right">
-                    <span className="text-teal-500 hover:underline"><a href="#">All Projects</a> <FontAwesomeIcon icon={faArrowRight} /></span>
+                    <span className="text-teal-500 hover:underline"><Link to="/projects">All Projects</Link> <FontAwesomeIcon icon={faArrowRight} /></span>
                 </div>
                 
             </div>
