@@ -111,7 +111,7 @@ function AllProjects(){
                     },
                     {name: "Jupyter",
                         icon: <SiJupyter />
-                        ,color: "orange"
+                        ,color: "jupyter"
                     },
                     {name: "Pandas",
                         icon: <SiPandas />

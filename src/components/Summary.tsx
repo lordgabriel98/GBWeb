@@ -1,0 +1,26 @@
+function Summary(){
+
+    return(
+        <div className="relative overflow-hidden border border-gray-300 px-3 rounded-lg text-sm bg-gray-100 w-md">
+            <div className="absolute top-0 left-0 right-0 h-0.5 w-full rounded-lg" style={{ background: "linear-gradient(90deg, #0d9488, #7c3aed, #0891b2)" }} />
+
+            <div className="flex flex-row justify-between border-b-1 border-gray-300">
+                <p className="py-4"><span className="text-gray-600 mr-20">Location</span></p><p className="py-4"><span>Port Moresby, Papua New Guinea</span></p>
+            </div>
+            <div className="flex flex-row justify-between border-b-1 border-gray-300">
+                <p className="py-4"><span className="text-gray-600 mr-20">Status</span></p><p className="py-4"><span className="bg-teal-100 text-teal-800 py-1 px-1 rounded-lg">Open to work</span></p>
+            </div>
+            <div className="flex flex-row justify-between border-b-1 border-gray-300">
+                <p className="py-4"><span className="text-gray-600 mr-20">Experience</span></p><p className="py-4"><span>5+ years</span></p>
+            </div>
+            <div className="flex flex-row justify-between">
+                <p className="py-4"><span className="text-sm text-gray-600 mr-20">Focus</span></p><p className="py-4"><span>Software / Web / Data</span></p>
+            </div>
+            
+
+        </div>
+    );
+
+}
+
+export default Summary;

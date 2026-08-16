@@ -9,7 +9,8 @@ const colorStyles = {
     orange: "bg-orange-100 text-orange-700",
     black: "bg-black-100 text-black-700",
     python: "bg-blue-100 text-blue-800",
-    violet: "bg-violet-100 text-violet-700"
+    violet: "bg-violet-100 text-violet-700",
+    jupyter: "bg-orange-100 text-orange-800"
 };
 
 export interface TechnologyProps{
