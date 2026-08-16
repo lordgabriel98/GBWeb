@@ -1,5 +1,6 @@
 import Footer from "../components/Footer";
 import Summary from "../components/Summary";
+import SkillAndTech from "../components/SkillAndtech";
 
 function About(){
         return(
@@ -45,6 +46,9 @@ function About(){
             </div>
 
         </section>
+        <div className="mx-auto my-1 h-px max-w-6xl bg-slate-200"></div>
+
+        <SkillAndTech />
         
         <Footer />
         </>
