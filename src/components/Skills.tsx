@@ -12,7 +12,8 @@ const colorStyles = {
     violet: "bg-violet-100 text-violet-700",
     jupyter: "bg-orange-100 text-orange-800",
     react: "bg-blue-100 text-[#61DBFB]",
-    tailwind: "bg-[#06b6d4] text-[#4c1d95]"
+    tailwind: "bg-gray-100 text-[#4c1d95]",
+    sky: "bg-sky-100 text-sky-700"
 };
 
 export interface SkillsProps{
