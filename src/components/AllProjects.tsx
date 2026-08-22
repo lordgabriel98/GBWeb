@@ -17,7 +17,7 @@ function AllProjects(){
 
     return(<div className='mx-auto flex flex-col'>
         
-        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
+        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40">
             <Project year="2025" title="ICTMS" 
                 description="Job ticketing and task allocation system for the RPNGC ICT Directorate."
                 technologies={[

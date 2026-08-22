@@ -1,6 +1,6 @@
 import Footer from "../components/Footer";
 import Summary from "../components/Summary";
-import SkillAndTech from "../components/SkillAndtech";
+import SkillAndTech from "../components/SkillAndTech";
 
 function About(){
         return(

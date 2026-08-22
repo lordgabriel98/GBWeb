@@ -23,7 +23,7 @@ function Hero(){
             I'm Gabriel Baje — a software developer focused on designing systems, implementing backend solutions and data analytics. Currently open to new opportunities.
         </p>
 
-        <div className="flex flex-row items-start gap-10 mb-3">
+        <div className= "flex flex-row items-start gap-10 mb-3">
             
                 <Link className="bg-gradient-to-r from-[#0d9488] to-[#7c3aed] text-white text-sm px-4 py-2 rounded-lg hover:opacity-90" to="/projects"> View Projects <FontAwesomeIcon icon={faArrowRight} /> </Link>
 
