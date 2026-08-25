@@ -2,6 +2,8 @@ import { FaDownload } from "react-icons/fa6";
 
 import WorkExperience from "../components/WorkExperience";
 
+import Education from "../components/Education";
+
 import cv from '../assets/GabrielBaje_CV.pdf';
 
 import Footer from "../components/Footer";
@@ -34,6 +36,9 @@ function Resume(){
         <div className="mx-auto h-px max-w-6xl bg-slate-200"></div>
         
         <WorkExperience /> 
+        
+        <Education />
+
 
         <Footer />
         </>
