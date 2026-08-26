@@ -4,7 +4,7 @@ function Navbar(){
     return (
         <nav className="border-b border-gray-200  
         relative flex flex-col sm:flex-row items-center justify-between 
-        px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
+        px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5 gap-4">
             <div className="text-xl font-bold">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-teal-500 to-purple-500" />
                 <span style={{

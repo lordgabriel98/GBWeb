@@ -23,7 +23,7 @@ function Resume(){
                 </div>
 
                 <div className="flex lg:justify-end">
-                    <span className=" flex items-center gap-2 text-sm rounded-lg border border-gray-300 hover:bg-gray-50 py-2 px-2"> <FaDownload /> <a href={cv} download>  Download PDF</a></span>
+                    <span className="flex items-center gap-2 text-sm rounded-lg border border-gray-300 hover:bg-gray-50 py-2 px-2"> <FaDownload /> <a href={cv} download>  Download PDF</a></span>
                 </div>
 
             </div>
