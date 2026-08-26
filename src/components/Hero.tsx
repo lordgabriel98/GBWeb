@@ -1,7 +1,10 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons"
+import { faArrowRight} from "@fortawesome/free-solid-svg-icons"
 import { Link } from "react-router-dom";
+
+import { LuLinkedin } from "react-icons/lu";
+import { HiOutlineEnvelope } from "react-icons/hi2";
+import { LuGithub } from "react-icons/lu";
 
 function Hero(){
 
@@ -27,19 +30,19 @@ function Hero(){
             
                 <Link className="bg-gradient-to-r from-[#0d9488] to-[#7c3aed] text-white text-sm px-4 py-2 rounded-lg hover:opacity-90" to="/projects"> View Projects <FontAwesomeIcon icon={faArrowRight} /> </Link>
 
-                <a className="border-1 border-gray-200 px-4 py-2 rounded-lg text-sm hover:bg-slate-50" href="#"> Get in Touch </a>
+                <Link className="border-1 border-gray-200 px-4 py-2 rounded-lg text-sm hover:bg-slate-50" to="/contact"> Get in Touch </Link>
             
         </div>
         <div className="flex flex-row gap-10 py-4">
-          <a href="#">
-            <FontAwesomeIcon className="text-gray-500 hover:text-slate-900" icon={faGithub} />
+          <a href="https://github.com/lordgabriel98/">
+            <LuGithub className="text-gray-500 hover:text-slate-900"/>
           </a>
-          <a href="#">
-            <FontAwesomeIcon className="text-gray-500 hover:text-slate-900" icon={faLinkedinIn} />
+          <a href="https://www.linkedin.com/in/gabriel-baje-166b571aa/">
+            <LuLinkedin className="text-gray-500 hover:text-slate-900"/>
           </a>
 
-          <a href="#">
-            <FontAwesomeIcon className="text-gray-500 hover:text-slate-900" icon={faEnvelope} />
+          <a href="mailto:bajegabriel@gmail.com">
+            <HiOutlineEnvelope className="text-gray-500 hover:text-slate-900"/>
           </a>
         </div>
 

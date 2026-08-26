@@ -2,7 +2,7 @@ function Summary(){
 
     return(
         <div className="relative overflow-hidden border border-gray-300 px-3 rounded-lg text-sm bg-gray-100 w-full sm:w-md">
-            <div className="absolute top-0 left-0 right-0 h-0.5 w-full rounded-lg" style={{ background: "linear-gradient(90deg, #0d9488, #7c3aed, #0891b2)" }} />
+            <div className="absolute top-0 left-0 right-0 h-1 w-full rounded-lg" style={{ background: "linear-gradient(90deg, #0d9488, #7c3aed, #0891b2)" }} />
 
             <div className="flex flex-row justify-between border-b-1 border-gray-300">
                 <p className="py-4"><span className="text-xs uppercase tracking-wider text-gray-600 mr-20">Location</span></p><p className="py-4"><span className="font-semibold">Port Moresby, Papua New Guinea</span></p>
