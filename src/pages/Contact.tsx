@@ -4,10 +4,18 @@ import {Html, Button} from "react-email";
 
 import { IoPaperPlaneOutline } from "react-icons/io5";
 
+import { LuLinkedin } from "react-icons/lu";
+
+import { HiOutlineEnvelope } from "react-icons/hi2";
+
+import { LuGithub } from "react-icons/lu";
+
+
+
 function Contact(){
     return(
         <>
-       <section className="mx-auto px-6 py-24 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
+       <section className="mx-auto px-6 pt-24 pb-10 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
             <h4 className="text-sm text-teal-700 font-semibold mb-4 tracking-widest uppercase relative">Contact</h4>
                 <h2 className="text-5xl mb-10 font-bold">
                     Let's Work Together
@@ -18,8 +26,8 @@ function Contact(){
         </p>
 
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2">
-        <div>
-            <form className="w-full text-slate-700 max-w-3xl">
+        <div className="mb-4">
+            <form className="w-full text-slate-700">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <label htmlFor="name" className="block font-medium text-sm mb-4">Name</label>
@@ -41,6 +49,38 @@ function Contact(){
                     <span className="flex items-center gap-1"><IoPaperPlaneOutline /> Send Message</span></button>
             </form>
         </div>
+
+        <div className="flex flex-col md:px-16 lg:px-18 xl:px-20 pt-10 md:pt-0 space-y-10 w-[90%]">
+            <div>
+                <h4 className="text-xs text-gray-400 font-semibold mb-4 tracking-widest uppercase">Direct</h4>
+                <a href="mailto:bajegabriel@gmail.com" className="text-sm text-slate-700 hover:text-teal-700 font-medium">
+                    <span className="flex items-center"> <HiOutlineEnvelope className="mr-2 text-teal-500"/> bajegabriel@gmail.com</span></a>
+            </div>
+            <div>
+                <h4 className="text-xs text-gray-400 font-semibold mb-4 tracking-widest uppercase">Elsewhere</h4>
+                <div className="flex flex-col gap-5">
+          <a href="https://github.com/lordgabriel98/">
+            <span className="flex items-center text-gray-600 text-sm space-x-2 hover:text-slate-900"><LuGithub className="mr-2"/> GitHub </span>
+          </a>
+          <a href="https://www.linkedin.com/in/gabriel-baje-166b571aa/">
+            <span className="flex items-center text-gray-600 text-sm space-x-2 hover:text-slate-900"><LuLinkedin className="mr-2 text-purple-700"/> LinkedIn </span>
+          </a>
+
+           <div className="relative overflow-hidden border border-gray-300 px-3 rounded-lg text-sm bg-gray-100">
+            <div className="absolute top-0 left-0 right-0 h-1 w-full rounded-lg" style={{ background: "linear-gradient(90deg, #0d9488, #7c3aed, #0891b2)" }} />
+               
+            <div className="flex flex-col">
+                <p className="pt-4"><span className="text-xs uppercase tracking-wider font-medium text-sm text-gray-600 mr-20">Response Time</span></p>
+                <p className="py-2"><span className="font-normal">Usually between 1-2 business days. For urgent matters, email works best.</span></p>
+            </div>
+            
+
+        </div>
+          </div>
+            </div>
+        </div>
+                
+        
         </div>
         </section>
 
