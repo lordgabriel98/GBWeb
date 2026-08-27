@@ -14,6 +14,8 @@ import { useState } from "react";
 
 
 function Contact(){
+    const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+
     const {executeRecaptcha} = useGoogleReCaptcha();
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>)=>{
@@ -27,7 +29,8 @@ function Contact(){
         return;
     }
 
-    const token = await executeRecaptcha("contact");
+    try{
+        const token = await executeRecaptcha("contact");
 
         
         const data = {
@@ -51,6 +54,15 @@ function Contact(){
         if(response.ok){
             console.log("Message sent!");
         }
+
+        setStatus("success");
+        form.reset();
+
+    }catch(error){
+        console.error(error)
+        setStatus("error");
+    }
+    
     }
 
     return(
@@ -86,8 +98,26 @@ function Contact(){
                 </div>
 
 
-                <button type="submit" className="bg-gradient-to-r from-[#0d9488] to-[#7c3aed] text-white px-2 py-2 rounded-lg hover:opacity-90">
-                    <span className="flex items-center gap-1"><IoPaperPlaneOutline /> Send Message</span></button>
+                <button type="submit" className="bg-gradient-to-r from-[#0d9488] to-[#7c3aed] text-white px-2 py-2 rounded-lg hover:opacity-90"
+                disabled={status==="sending"}>
+                    <span className="flex items-center gap-1"><IoPaperPlaneOutline />{status === "sending" ? "Sending..." : "Send Message"}</span></button>
+                {status==="sending" && (
+                    <p className="mt-3 text-sm text-gray-500">
+                        Sending your message...
+                    </p>
+                )}
+
+                {status==="success" && (
+                    <p className="mt-3 text-sm text-teal-700">
+                        Message sent successfully. Thanks for getting in touch!
+                    </p>
+                )}
+
+                {status==="error" && (
+                    <p className="mt-3 text-sm text-red-600">
+                        Something went wrong. Please try again or email me directly.
+                    </p>
+                )}
             </form>
         </div>
 
