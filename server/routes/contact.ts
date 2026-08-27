@@ -11,7 +11,7 @@ router.post("/", async(req, res)=>{
         console.log("sending email...");
 
         const info = await transporter.sendMail({
-            from: process.env.SMTP_FROM,
+            from: `Portfolio Website <${process.env.SMTP_FROM}>`,
             to: process.env.CONTACT_EMAIL,
             replyTo: email,
             subject: `Website Contact: ${name}`,
