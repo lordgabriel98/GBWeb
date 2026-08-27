@@ -10,11 +10,26 @@ import { LuGithub } from "react-icons/lu";
 
 import {useGoogleReCaptcha} from "react-google-recaptcha-v3";
 
+import {GoogleReCaptchaProvider} from "react-google-recaptcha-v3";
+
 import { useState } from "react";
 
 
 function Contact(){
-    const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+    
+
+    return(
+        <GoogleReCaptchaProvider
+            reCaptchaKey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
+        >
+            <ContactContent />
+
+        </GoogleReCaptchaProvider>
+    )
+}
+
+function ContactContent(){
+const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
     const {executeRecaptcha} = useGoogleReCaptcha();
 
@@ -64,7 +79,7 @@ function Contact(){
     }
     
     }
-
+    
     return(
         <>
        <section className="mx-auto px-6 pt-24 pb-10 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
@@ -160,7 +175,7 @@ function Contact(){
 
         <Footer />
         </>
-    )
+    );
 }
 
 export default Contact;
