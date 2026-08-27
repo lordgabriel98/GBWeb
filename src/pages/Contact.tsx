@@ -1,7 +1,5 @@
 import Footer from "../components/Footer";
 
-import {Html, Button} from "react-email";
-
 import { IoPaperPlaneOutline } from "react-icons/io5";
 
 import { LuLinkedin } from "react-icons/lu";
@@ -10,9 +8,51 @@ import { HiOutlineEnvelope } from "react-icons/hi2";
 
 import { LuGithub } from "react-icons/lu";
 
+import {useGoogleReCaptcha} from "react-google-recaptcha-v3";
+
+import { useState } from "react";
 
 
 function Contact(){
+    const {executeRecaptcha} = useGoogleReCaptcha();
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>)=>{
+        e.preventDefault();
+
+        const form = e.currentTarget as HTMLFormElement;
+        const formData = new FormData(form);
+
+         if (!executeRecaptcha) {
+        console.log("reCAPTCHA not ready");
+        return;
+    }
+
+    const token = await executeRecaptcha("contact");
+
+        
+        const data = {
+            name: formData.get("name"),
+            email: formData.get("email"),
+            message: formData.get("message"),
+            recaptchaToken:token,
+        }
+
+        
+    
+        const response = await fetch("/api/contact", {
+            method: "POST",
+            headers:{
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+
+        });
+
+        if(response.ok){
+            console.log("Message sent!");
+        }
+    }
+
     return(
         <>
        <section className="mx-auto px-6 pt-24 pb-10 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
@@ -27,7 +67,7 @@ function Contact(){
 
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2">
         <div className="mb-4">
-            <form className="w-full text-slate-700">
+            <form onSubmit={handleSubmit} className="w-full text-slate-700">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <label htmlFor="name" className="block font-medium text-sm mb-4">Name</label>
@@ -45,7 +85,8 @@ function Contact(){
                     <textarea id="message" name="message" className="w-full rounded-lg border border-gray-300 bg-gray-100 px-4 py-3 mb-4 text-sm" rows={6} style={{ resize: "none" }} placeholder="What's on your mind?"/>
                 </div>
 
-                <button className="bg-gradient-to-r from-[#0d9488] to-[#7c3aed] text-white px-2 py-2 rounded-lg hover:opacity-90">
+
+                <button type="submit" className="bg-gradient-to-r from-[#0d9488] to-[#7c3aed] text-white px-2 py-2 rounded-lg hover:opacity-90">
                     <span className="flex items-center gap-1"><IoPaperPlaneOutline /> Send Message</span></button>
             </form>
         </div>
