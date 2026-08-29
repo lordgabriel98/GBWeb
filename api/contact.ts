@@ -1,4 +1,4 @@
-import transporter from "../email/transporter";
+import transporter from "../email/transporter.js";
 
 export default async function contact(req:any, res:any){
     try{
