@@ -1,6 +1,6 @@
 import Router from "express";
 
-import transporter from "../email/transporter";
+import transporter from "./../../email/transporter";
 
 const router = Router();
 
