@@ -1,10 +1,6 @@
-import Router from "express";
+import transporter from "../server/email/transporter";
 
-import transporter from "../email/transporter";
-
-const router = Router();
-
-router.post("/", async(req, res)=>{
+export default async function contact(req:any, res:any){
     try{
         const {name, email, message, recaptchaToken} = req.body;
 
@@ -95,8 +91,4 @@ Sent from gabrielbaje.dev
             message: "Failed to send email",
         });
     }
-
-   
-})
-
-export default router;
+}
