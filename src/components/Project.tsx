@@ -1,7 +1,6 @@
 import Technologies from "./Technologies";
 import type {TechnologyProps} from "./Technologies";
 
-import {motion} from "motion/react";
 
 interface MyProjectProps{
     year: string;
@@ -10,10 +9,6 @@ interface MyProjectProps{
     technologies: TechnologyProps[];
 }
 
-const projectVariants = {
-    hidden:{opacity:0},
-    show: 1,
-}
 
 
 function Project({year, title, description, technologies}: MyProjectProps){
