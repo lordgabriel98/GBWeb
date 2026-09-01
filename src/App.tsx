@@ -7,9 +7,11 @@ import Projects from './pages/Projects'
 import Resume from './pages/Resume'
 import Contact from './pages/Contact'
 
+
 function App() {
+ 
   return (
-    <>
+    <div className="min-h-screen bg-white text-slate-900 dark:bg-slate-700 dark:text-white transition-colors duration-300">
       <Navbar />
       
       <Routes>
@@ -20,7 +22,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-    </>
+   
+    </div>
     
 )}
 

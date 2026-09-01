@@ -18,12 +18,12 @@ function Footer() {
             py-5
             mt-20
         ">
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-400 dark:text-white">
                 © 2026 Gabriel Baje
             </p>
 
             <span className="flex items-center gap-1">
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-400 dark:text-white">
                     Ave Christus Rex
                 </p>
                 <svg
@@ -44,7 +44,7 @@ function Footer() {
 
             </span>
 
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-400 dark:text-white">
                 Built with React · Tailwind CSS
             </p>
         </footer>

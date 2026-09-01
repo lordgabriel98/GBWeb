@@ -4,11 +4,11 @@ function Education()
         <>
         <section className="mx-auto px-6 sm:px-5 md:px-16 lg:px-8 xl:px-20">
             <div className="flex mx-auto md:px-16 lg:px-18 xl:px-20">
-                <h4 className="text-sm text-gray-400 font-semibold mb-4 tracking-widest uppercase">Education</h4>
+                <h4 className="text-sm text-gray-400 font-semibold mb-4 tracking-widest uppercase dark:text-white">Education</h4>
                 </div>
                 <div className="mx-auto my-1 h-px max-w-6xl bg-slate-200"></div>
 
-                <div className="grid grid-cols-1 pb-5 md:grid-cols-[1fr_4fr] lg:grid-cols-[1fr_4fr] pt-10 text-gray-500 px-10 lg:px-20">
+                <div className="grid grid-cols-1 pb-5 md:grid-cols-[1fr_4fr] lg:grid-cols-[1fr_4fr] pt-10 text-gray-500 px-10 lg:px-20 dark:text-white">
                     <div className="space-y-4 text-sm pb-4">
                         <p>2017 - 2020</p>
                     </div>

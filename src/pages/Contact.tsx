@@ -86,13 +86,13 @@ const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("
         <>
        <motion.section initial={{opacity:0, y:24}} animate={{opacity:1, y:0}} transition={{duration: 0.8, ease: "easeOut"}}
                 className="mx-auto px-6 pt-24 pb-10 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
-            <h4 className="text-sm text-teal-700 font-semibold mb-4 tracking-widest uppercase relative">Contact</h4>
+            <h4 className="text-sm text-teal-700 font-semibold mb-4 tracking-widest uppercase relative dark:text-teal-500">Contact</h4>
                 <h2 className="text-5xl mb-10 font-bold">
                     Let's Work Together
                 </h2>
 
-                 <p className="text-gray-500 mb-10 max-w-2xl">
-            Whether you're looking to hire, collaborate on a project, or simply say hello — feel free to get in touch.
+                 <p className="text-gray-500 mb-10 max-w-2xl dark:text-white">
+            Whether you're looking to hire, collaborate on a project, or simply say hello, feel free to get in touch.
         </p>
 
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2">
@@ -100,18 +100,18 @@ const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("
             <form onSubmit={handleSubmit} className="w-full text-slate-700">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                        <label htmlFor="name" className="block font-medium text-sm mb-4">Name</label>
+                        <label htmlFor="name" className="block font-medium text-sm mb-4 dark:text-teal-500">Name</label>
                         <input id="name" name="name" type="text" className="w-full rounded-lg border border-gray-300 bg-gray-100 px-4 py-3 text-sm" placeholder="Your name" required />
                     </div>
                     <div>
-                        <label htmlFor="email" className="block font-medium text-sm mb-4">Email</label>
+                        <label htmlFor="email" className="block font-medium text-sm mb-4 dark:text-teal-500">Email</label>
                         <input id="email" name="email" type="email" className="w-full rounded-lg border border-gray-300 bg-gray-100 px-4 py-3 text-sm" placeholder="Email" required />
                     </div>
                 
                 </div>
 
                 <div>
-                    <label htmlFor="message" className="block font-medium text-sm my-4">Message</label>
+                    <label htmlFor="message" className="block font-medium text-sm my-4 dark:text-teal-500">Message</label>
                     <textarea id="message" name="message" className="w-full rounded-lg border border-gray-300 bg-gray-100 px-4 py-3 mb-4 text-sm" rows={6} style={{ resize: "none" }} placeholder="What's on your mind?"/>
                 </div>
 
@@ -126,13 +126,13 @@ const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("
                 )}
 
                 {status==="success" && (
-                    <p className="mt-3 text-sm text-teal-700">
+                    <p className="mt-3 text-sm text-teal-700 dark:text-teal-300">
                         Message sent successfully. Thanks for getting in touch!
                     </p>
                 )}
 
                 {status==="error" && (
-                    <p className="mt-3 text-sm text-red-600">
+                    <p className="mt-3 text-sm text-red-600 dark:text-red-300">
                         Something went wrong. Please try again or email me directly.
                     </p>
                 )}
@@ -141,25 +141,25 @@ const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("
 
         <div className="flex flex-col md:px-16 lg:px-18 xl:px-20 pt-10 md:pt-0 space-y-10 w-[90%]">
             <div>
-                <h4 className="text-xs text-gray-400 font-semibold mb-4 tracking-widest uppercase">Direct</h4>
+                <h4 className="text-xs text-gray-400 font-semibold mb-4 tracking-widest uppercase dark:text-white">Direct</h4>
                 <a href="mailto:bajegabriel@gmail.com" className="text-sm text-slate-700 hover:text-teal-700 font-medium">
-                    <span className="flex items-center"> <HiOutlineEnvelope className="mr-2 text-teal-500"/> bajegabriel@gmail.com</span></a>
+                    <span className="flex items-center dark:text-white dark:hover:text-teal-200"> <HiOutlineEnvelope className="mr-2 text-teal-500"/> bajegabriel@gmail.com</span></a>
             </div>
             <div>
-                <h4 className="text-xs text-gray-400 font-semibold mb-4 tracking-widest uppercase">Elsewhere</h4>
+                <h4 className="text-xs text-gray-400 font-semibold mb-4 tracking-widest uppercase dark:text-white">Elsewhere</h4>
                 <div className="flex flex-col gap-5">
           <a href="https://github.com/lordgabriel98/">
-            <span className="flex items-center text-gray-600 text-sm space-x-2 hover:text-slate-900"><LuGithub className="mr-2"/> GitHub </span>
+            <span className="flex items-center text-gray-600 text-sm space-x-2 hover:text-slate-900 dark:text-slate-200 dark:hover:text-teal-200"><LuGithub className="mr-2"/> GitHub </span>
           </a>
           <a href="https://www.linkedin.com/in/gabriel-baje-166b571aa/">
-            <span className="flex items-center text-gray-600 text-sm space-x-2 hover:text-slate-900"><LuLinkedin className="mr-2 text-purple-700"/> LinkedIn </span>
+            <span className="flex items-center text-gray-600 text-sm space-x-2 hover:text-slate-900 dark:text-slate-200 dark:hover:text-teal-200"><LuLinkedin className="mr-2 text-purple-700 dark:text-purple-300"/> LinkedIn </span>
           </a>
 
-           <div className="relative overflow-hidden border border-gray-300 px-3 rounded-lg text-sm bg-gray-100">
+           <div className="relative overflow-hidden border border-gray-300 px-3 rounded-lg text-sm bg-gray-100 dark:bg-slate-500">
             <div className="absolute top-0 left-0 right-0 h-1 w-full rounded-lg" style={{ background: "linear-gradient(90deg, #0d9488, #7c3aed, #0891b2)" }} />
                
             <div className="flex flex-col">
-                <p className="pt-4"><span className="text-xs uppercase tracking-wider font-medium text-sm text-gray-600 mr-20">Response Time</span></p>
+                <p className="pt-4"><span className="text-xs uppercase tracking-wider font-medium text-sm text-gray-600 mr-20 dark:text-white">Response Time</span></p>
                 <p className="py-2"><span className="font-normal">Usually between 1-2 business days. For urgent matters, email works best.</span></p>
             </div>
             

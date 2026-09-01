@@ -6,7 +6,7 @@ function WorkExperience(){
         <>
         <section className="mx-auto px-6 pb-24 sm:px-7 md:px-16 lg:px-16 xl:px-30">
 
-        <div className="grid grid-cols-1 pb-10 md:grid-cols-[1fr_4fr] lg:grid-cols-[1fr_4fr] pt-10 text-gray-500 px-10">
+        <div className="grid grid-cols-1 pb-10 md:grid-cols-[1fr_4fr] lg:grid-cols-[1fr_4fr] pt-10 text-gray-500 px-10 dark:text-white">
             <div className="space-y-4 text-sm">
                 <p>2025- Present</p>
                 <p>Port Moresby, NCD</p>
@@ -21,7 +21,7 @@ function WorkExperience(){
                 </div>
                 
 
-                <ul className="list-disc pl-5 space-y-6  marker:text-teal-500 text-sm">
+                <ul className="list-disc pl-5 space-y-6  marker:text-teal-500 text-sm dark:text-white">
                     <li>
                         Led development of business systems using Laravel and MySQL.
                     </li>
@@ -38,7 +38,7 @@ function WorkExperience(){
             
         <div className="mx-auto my-1 h-px max-w-6xl bg-slate-200"></div>
         
-        <div className="grid grid-cols-1 pb-10 md:grid-cols-[1fr_4fr] lg:grid-cols-[1fr_4fr] pt-10 text-gray-500 px-10">
+        <div className="grid grid-cols-1 pb-10 md:grid-cols-[1fr_4fr] lg:grid-cols-[1fr_4fr] pt-10 text-gray-500 px-10 dark:text-white">
             <div className="space-y-4 text-sm">
                 <p>2025 - 2026</p>
                 <p>Port Moresby, NCD</p>
@@ -70,7 +70,7 @@ function WorkExperience(){
 
         <div className="mx-auto my-1 h-px max-w-6xl bg-slate-200"></div>
 
-        <div className="grid grid-cols-1 pb-10 md:grid-cols-[1fr_4fr] lg:grid-cols-[1fr_4fr] pt-10 text-gray-500 px-10">
+        <div className="grid grid-cols-1 pb-10 md:grid-cols-[1fr_4fr] lg:grid-cols-[1fr_4fr] pt-10 text-gray-500 px-10 dark:text-white">
             <div className="space-y-4 text-sm">
                 <p>2024 - 2025</p>
                 <p>Port Moresby, NCD</p>

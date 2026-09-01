@@ -23,12 +23,12 @@ function SkillAndTech(){
     return(
         <section className="mx-auto px-6 py-10 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
 
-            <h4 className="text-sm text-gray-400 font-semibold mb-4 tracking-widest uppercase">Skills & Technologies</h4>
+            <h4 className="text-sm text-gray-400 font-semibold mb-4 tracking-widest uppercase dark:text-white">Skills & Technologies</h4>
 
             <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
             <div className="flex flex-col gap-1">
-                <h4 className="uppercase font-semibold text-teal-700 text-sm">Languages</h4>
+                <h4 className="uppercase font-semibold text-teal-700 text-sm dark:text-teal-500">Languages</h4>
                 <Skills name="Python" icon={<FaPython />} color="python"/>
                 <Skills name="TypeScript" icon={<SiTypescript />} color="yellow" />
                 <Skills name="JavaScript" icon={<SiJavascript />} color="slate" />
@@ -38,7 +38,7 @@ function SkillAndTech(){
             </div>    
             
             <div>
-                <h4 className="uppercase font-semibold text-purple-700 text-sm">Frontend</h4>
+                <h4 className="uppercase font-semibold text-purple-700 text-sm dark:text-purple-500">Frontend</h4>
                 <Skills name="React" icon={<FaReact />} color="react"/>
                 <Skills name="Tailwind CSS" icon={<SiTailwindcss />} color="tailwind" />
                 <Skills name="Bootstrap" icon={<FaBootstrap />} color="purple" />
@@ -46,7 +46,7 @@ function SkillAndTech(){
             </div>
 
             <div>
-                <h4 className="uppercase font-semibold text-teal-700 text-sm">Backend</h4>
+                <h4 className="uppercase font-semibold text-teal-700 text-sm dark:text-teal-500">Backend</h4>
                 <Skills name="Laravel" icon={<FaLaravel />} color="red"/>
                 <Skills name="Node.js" icon={<FaNodeJs />} color="green" />
                 <Skills name="Express.js" icon={<SiExpress />} color="yellow" />
@@ -54,7 +54,7 @@ function SkillAndTech(){
             </div>
 
             <div>
-                <h4 className="uppercase font-semibold text-purple-700 text-sm">Tooling</h4>
+                <h4 className="uppercase font-semibold text-purple-700 text-sm dark:text-purple-500">Tooling</h4>
                 <Skills name="Git" icon={<FaGitAlt />} color="orange"/>
                 <Skills name="GitHub" icon={<FaGithub />} color="slate" />
                 <Skills name="Linux" icon={<FaLinux />} color="yellow" />

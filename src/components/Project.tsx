@@ -14,13 +14,13 @@ interface MyProjectProps{
 function Project({year, title, description, technologies}: MyProjectProps){
     
     return(
-        <div className="bg-gray-200 w-full rounded-lg px-5 py-10 border-1 border-slate-300">
+        <div className="bg-gray-200 w-full rounded-lg px-5 py-10 border-1 border-slate-300 dark:bg-slate-500">
 
             <p className="text-xs mb-4">{year}</p>
 
             <h3 className="mb-4">{title}</h3>
 
-            <p className="text-gray-700 text-sm">{description}</p>
+            <p className="text-gray-700 text-sm dark:text-white">{description}</p>
 
             <div className="flex flex-wrap gap-2 mt-6">
                 {technologies.map((tech)=>(
