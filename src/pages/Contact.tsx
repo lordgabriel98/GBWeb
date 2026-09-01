@@ -14,6 +14,8 @@ import {GoogleReCaptchaProvider} from "react-google-recaptcha-v3";
 
 import { useState } from "react";
 
+import {motion} from "motion/react"
+
 
 function Contact(){
     
@@ -82,7 +84,8 @@ const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("
     
     return(
         <>
-       <section className="mx-auto px-6 pt-24 pb-10 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
+       <motion.section initial={{opacity:0, y:24}} animate={{opacity:1, y:0}} transition={{duration: 0.8, ease: "easeOut"}}
+                className="mx-auto px-6 pt-24 pb-10 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
             <h4 className="text-sm text-teal-700 font-semibold mb-4 tracking-widest uppercase relative">Contact</h4>
                 <h2 className="text-5xl mb-10 font-bold">
                     Let's Work Together
@@ -168,7 +171,7 @@ const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("
                 
         
         </div>
-        </section>
+        </motion.section>
 
         
 

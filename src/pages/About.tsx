@@ -2,10 +2,13 @@ import Footer from "../components/Footer";
 import Summary from "../components/Summary";
 import SkillAndTech from "../components/SkillAndTech";
 
+import {motion} from "motion/react";
+
 function About(){
         return(
         <>
-         <section className="mx-auto px-6 py-24 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
+         <motion.section initial={{opacity:0, y:24}} animate={{opacity:1, y:0}} transition={{duration: 0.8, ease: "easeOut"}}
+          className="mx-auto px-6 py-24 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
             <h4 className="text-sm text-teal-700 font-semibold mb-4 tracking-widest uppercase relative">About</h4>
                 <h2 className="text-5xl mb-10 font-bold">
                     A bit about me.
@@ -45,7 +48,7 @@ function About(){
               
             </div>
 
-        </section>
+        </motion.section>
         <div className="mx-auto my-1 h-px max-w-6xl bg-slate-200"></div>
 
         <SkillAndTech />

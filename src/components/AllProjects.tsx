@@ -13,18 +13,32 @@ import { SiJupyter } from "react-icons/si";
 import { LuChartNoAxesCombined } from "react-icons/lu";
 import { SiPandas } from "react-icons/si";
 
+import {motion} from "motion/react";
+
+const divVariants = {hidden: {opacity: 0},
+                    show: {
+                        opacity: 1,
+                        transition:{
+                            staggerChildren:0.25,
+                        },
+                    },
+                }
+const projectVariants = {hidden:{opacity:0}, show:{opacity:1}}
+
 function AllProjects(){
 
     return(<div className='mx-auto flex flex-col'>
         
-        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40">
+        <motion.div variants={divVariants} initial="hidden" animate="show" className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40">
+            
+            <motion.div variants={projectVariants}>
             <Project year="2025" title="ICTMS" 
                 description="Job ticketing and task allocation system for the RPNGC ICT Directorate."
                 technologies={[
                     {name: "Express.js",
                         icon: <IoLogoJavascript />
                     , color: "yellow"
-                    },
+                 },
                     {name: "Node.js",
                         icon: <FaNodeJs />
                         ,color: "green"
@@ -34,7 +48,9 @@ function AllProjects(){
                     ,color: "blue"
                     }
                 ]}/>
-
+                </motion.div>
+            
+            <motion.div variants={projectVariants}>
             <Project year="2026" title="Client Information Centre" 
                 description="Data management software for tracking application and awards for Australia Awards PNG."
                 technologies={[
@@ -51,7 +67,9 @@ function AllProjects(){
                         ,color: "slate"
                     }
                 ]}/>
-
+                </motion.div>
+            
+            <motion.div variants={projectVariants}>
             <Project year="2024" title="PNGRO Website"
                 description="Official website for Papua New Guinea Outreach Inc."
                 technologies={[
@@ -68,6 +86,10 @@ function AllProjects(){
                         ,color: "purple"
                     }
                 ]} />
+
+                </motion.div>
+
+                <motion.div variants={projectVariants}>
                 <Project year="2024" title="NOSS 2023"
                 description="Jupyter notebook file used to analyze the NOSS data for 2023"
                 technologies={[
@@ -84,7 +106,9 @@ function AllProjects(){
                         ,color: "violet"
                     }
                 ]} />
+                </motion.div>
                 
+                <motion.div variants={projectVariants}>
                 <Project year="2023" title="PLTable"
                 description="A Python program to fetch the Premier League table to the terminal."
                 technologies={[
@@ -101,7 +125,9 @@ function AllProjects(){
                         ,color: "orange"
                     }
                 ]} />
-                
+                </motion.div>
+
+                <motion.div variants={projectVariants}>
                 <Project year="2025" title="PNG Scholars"
                 description="Statistical analysis and data visualization for PNG Scholars research."
                 technologies={[
@@ -118,7 +144,9 @@ function AllProjects(){
                         ,color: "black"
                     }
                 ]} />
-        </div>
+
+                </motion.div>
+        </motion.div>
     
     </div>)
 }

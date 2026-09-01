@@ -6,10 +6,12 @@ import { LuLinkedin } from "react-icons/lu";
 import { HiOutlineEnvelope } from "react-icons/hi2";
 import { LuGithub } from "react-icons/lu";
 
+import {motion} from "motion/react";
+
 function Hero(){
 
     return (
-        <section className="mx-auto px-6 py-24 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
+        <motion.section initial={{opacity:0, y:24}} animate={{opacity:1, y:0}} transition={{duration: 0.8, ease: "easeOut"}} className="mx-auto px-6 py-24 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5">
             <h4 className="text-sm text-teal-700 font-semibold mb-4 tracking-widest uppercase relative">Software Developer</h4>
             <h2 className="text-6xl mb-10 font-bold">
             Building intentional<br></br> <span style={{
@@ -46,7 +48,7 @@ function Hero(){
           </a>
         </div>
 
-        </section>
+        </motion.section>
         
         
     );
