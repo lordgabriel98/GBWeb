@@ -1,4 +1,4 @@
-import { BsDownload, BsLinkedin } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 import WorkExperience from "../components/WorkExperience";
 
