@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 
-import {useState} from "react";
+import {useState, useEffect} from "react";
 
 import { MdOutlineWbSunny } from "react-icons/md";
 
@@ -11,7 +11,14 @@ import { IoMenu, IoClose } from "react-icons/io5";
 
 function Navbar(){
 
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(()=>{
+        return localStorage.getItem("theme") === "dark";
+    });
+
+    useEffect(()=>{
+        document.documentElement.classList.toggle("dark", darkMode);
+        localStorage.setItem("theme", darkMode ? "dark": "light")
+    }, [darkMode])
 
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -27,11 +34,13 @@ function Navbar(){
 
         document.documentElement.classList.toggle("dark", newMode);
 
+
         return newMode;
     });
     }
 
     return (
+        <>
         <nav className="border-b border-gray-200  
                 relative flex flex-col sm:flex-row items-center justify-between 
                 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40 py-5 gap-4">
@@ -78,32 +87,7 @@ function Navbar(){
                
             </div>
 
-            {menuOpen && (
-    <div className="border-t border-slate-200 dark:border-slate-800 py-4">
-        <div className="md:flex flex flex-col gap-4 text-sm">
-            <NavLink to="/" className={navLinkClass} onClick={() => setMenuOpen(false)}>
-                Home
-            </NavLink>
-
-            <NavLink to="/projects" className={navLinkClass} onClick={() => setMenuOpen(false)}>
-                Projects
-            </NavLink>
-
-            <NavLink to="/about" className={navLinkClass} onClick={() => setMenuOpen(false)}>
-                About
-            </NavLink>
-
-            <NavLink to="/resume" className={navLinkClass} onClick={() => setMenuOpen(false)}>
-                Resume
-            </NavLink>
-
-            <NavLink to="/contact" className={navLinkClass} onClick={() => setMenuOpen(false)}>
-                Contact
-            </NavLink>
-
-        </div>
-    </div>
-)}
+            
 
             <button onClick={()=>setMenuOpen(!menuOpen)} className="md:hidden p-2 rounded-lg text-slate-600 dark:text-slate-300"
                 aria-label="toggle naviagation menu">{menuOpen ? <IoClose />: <IoMenu />}
@@ -116,6 +100,34 @@ function Navbar(){
 
             
         </nav>
+
+        {menuOpen && (
+    <div className="border-t border-slate-200 dark:border-slate-800 py-4 pl-4">
+        <div className="md:flex flex flex-col gap-4 text-sm">
+            <NavLink to="/" className={navLinkClass + "hover:bg-slate-100 dark:hover:bg-slate-800"} onClick={() => setMenuOpen(false)}>
+                Home
+            </NavLink>
+
+            <NavLink to="/projects" className={navLinkClass + "hover:bg-slate-100 dark:hover:bg-slate-800"} onClick={() => setMenuOpen(false)}>
+                Projects
+            </NavLink>
+
+            <NavLink to="/about" className={navLinkClass + "hover:bg-slate-100 dark:hover:bg-slate-800"} onClick={() => setMenuOpen(false)}>
+                About
+            </NavLink>
+
+            <NavLink to="/resume" className={navLinkClass + "hover:bg-slate-100 dark:hover:bg-slate-800"} onClick={() => setMenuOpen(false)}>
+                Resume
+            </NavLink>
+
+            <NavLink to="/contact" className={navLinkClass + "hover:bg-slate-100 dark:hover:bg-slate-800"} onClick={() => setMenuOpen(false)}>
+                Contact
+            </NavLink>
+
+        </div>
+    </div>
+)}
+</>
     )
 
 } 
