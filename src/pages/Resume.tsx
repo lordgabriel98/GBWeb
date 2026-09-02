@@ -4,7 +4,6 @@ import WorkExperience from "../components/WorkExperience";
 
 import Education from "../components/Education";
 
-import cv from '../assets/GabrielBaje_CV.pdf';
 
 import Footer from "../components/Footer";
 
@@ -26,7 +25,7 @@ function Resume(){
                 </div>
 
                 <div className="flex lg:justify-end">
-                    <span className="flex items-center gap-2 text-sm rounded-lg border border-gray-300 hover:bg-gray-50 py-2 px-2 dark:hover:bg-slate-500"> <BsDownload /> <a href={cv} download>  Download PDF</a></span>
+                    <span className="flex items-center gap-2 text-sm rounded-lg border border-gray-300 hover:bg-gray-50 py-2 px-2 dark:hover:bg-slate-500"> <BsDownload /> <a href="#" download>  Download PDF</a></span>
                 </div>
 
             </div>
