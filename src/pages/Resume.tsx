@@ -1,4 +1,4 @@
-import { BsDownload } from "react-icons/bs";
+import { BsDownload, BsLinkedin } from "react-icons/bs";
 
 import WorkExperience from "../components/WorkExperience";
 
@@ -8,7 +8,6 @@ import Education from "../components/Education";
 import Footer from "../components/Footer";
 
 import {motion} from "motion/react";
-
 
 function Resume(){
         return(
@@ -25,7 +24,7 @@ function Resume(){
                 </div>
 
                 <div className="flex lg:justify-end">
-                    <span className="flex items-center gap-2 text-sm rounded-lg border border-gray-300 hover:bg-gray-50 py-2 px-2 dark:hover:bg-slate-500"> <BsDownload /> <a href="#" download>  Download PDF</a></span>
+                    <span className="flex items-center gap-2 text-sm rounded-lg border border-gray-300 hover:bg-gray-50 py-2 px-2 dark:hover:bg-slate-500"> <BsLinkedin /> <a href="https://www.linkedin.com/in/gabriel-baje-166b571aa/">  LinkedIn</a></span>
                 </div>
 
             </div>
