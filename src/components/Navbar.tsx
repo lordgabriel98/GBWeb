@@ -22,10 +22,16 @@ function Navbar(){
 
     const [menuOpen, setMenuOpen] = useState(false);
 
-     const navLinkClass = ({ isActive }: { isActive: boolean }) =>
+    const navLinkClass = ({ isActive }: { isActive: boolean }) =>
         isActive
             ? "text-teal-600 dark:text-teal-400"
             : "text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400";
+
+    const mobileNavLinkClass = ({isActive}: {isActive: boolean})=>
+
+        `${navLinkClass} px-2 py-3 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800`;
+
+        
 
     function toggleDark(){
 
@@ -104,23 +110,23 @@ function Navbar(){
         {menuOpen && (
     <div className="border-t border-slate-200 dark:border-slate-800 py-4 pl-4">
         <div className="md:flex flex flex-col gap-4 text-sm">
-            <NavLink to="/" className={navLinkClass + "hover:bg-slate-100 dark:hover:bg-slate-800"} onClick={() => setMenuOpen(false)}>
+            <NavLink to="/" className={mobileNavLinkClass} onClick={() => setMenuOpen(false)}>
                 Home
             </NavLink>
 
-            <NavLink to="/projects" className={navLinkClass + "hover:bg-slate-100 dark:hover:bg-slate-800"} onClick={() => setMenuOpen(false)}>
+            <NavLink to="/projects" className={mobileNavLinkClass} onClick={() => setMenuOpen(false)}>
                 Projects
             </NavLink>
 
-            <NavLink to="/about" className={navLinkClass + "hover:bg-slate-100 dark:hover:bg-slate-800"} onClick={() => setMenuOpen(false)}>
+            <NavLink to="/about" className={mobileNavLinkClass} onClick={() => setMenuOpen(false)}>
                 About
             </NavLink>
 
-            <NavLink to="/resume" className={navLinkClass + "hover:bg-slate-100 dark:hover:bg-slate-800"} onClick={() => setMenuOpen(false)}>
+            <NavLink to="/resume" className={mobileNavLinkClass} onClick={() => setMenuOpen(false)}>
                 Resume
             </NavLink>
 
-            <NavLink to="/contact" className={navLinkClass + "hover:bg-slate-100 dark:hover:bg-slate-800"} onClick={() => setMenuOpen(false)}>
+            <NavLink to="/contact" className={mobileNavLinkClass} onClick={() => setMenuOpen(false)}>
                 Contact
             </NavLink>
 
