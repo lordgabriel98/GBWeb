@@ -27,9 +27,8 @@ function Navbar(){
             ? "text-teal-600 dark:text-teal-400"
             : "text-slate-600 dark:text-slate-300 hover:text-teal-600 dark:hover:text-teal-400";
 
-    const mobileNavLinkClass = ({isActive}: {isActive: boolean})=>
+    const mobileNavLinkClass = `${navLinkClass} px-2 py-3 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800`;
 
-        `${navLinkClass} px-2 py-3 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800`;
 
         
 
