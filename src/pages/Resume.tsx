@@ -4,7 +4,6 @@ import WorkExperience from "../components/WorkExperience";
 
 import Education from "../components/Education";
 
-
 import Footer from "../components/Footer";
 
 import {motion} from "motion/react";

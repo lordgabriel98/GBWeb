@@ -29,7 +29,9 @@ function AllProjects(){
 
     return(<div className='mx-auto flex flex-col'>
         
-        <motion.div variants={divVariants} initial="hidden" animate="show" className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40">
+        <motion.div variants={divVariants} initial="hidden" animate="show" 
+        className="mx-auto grid grid-cols-1 md:grid-cols-2 
+        lg:grid-cols-3 gap-8 px-6 sm:px-10 md:px-16 lg:px-24 xl:px-40">
             
             <motion.div variants={projectVariants}>
             <Project year="2025" title="ICTMS" 

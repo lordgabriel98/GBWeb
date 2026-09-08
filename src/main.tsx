@@ -6,6 +6,10 @@ import App from './App.tsx'
 
 import {Analytics} from '@vercel/analytics/react';
 
+import "./utils/log.js";
+
+
+
 createRoot(document.getElementById('root')!).render(
   
   <StrictMode>
@@ -13,6 +17,7 @@ createRoot(document.getElementById('root')!).render(
       <App />
     </BrowserRouter>
     <Analytics />
+ 
   </StrictMode>,
 
 )
