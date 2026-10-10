@@ -1,7 +1,10 @@
 import { useState, useEffect } from "react";
 
+import { PiCrossLight } from "react-icons/pi";
 
 import {Popover, PreviewTrigger, Button} from "react-aria-components";
+
+
 
 type Saint = {
     name: string;
@@ -81,7 +84,7 @@ function Footer() {
                             <ul className="text-[#FFD700] space-y-2">
                                 {saints.map((saint) => (
                                     <li className="hover:text-amber-400" key={saint.name}>
-                                        <a href="https://acoci86.github.io/daily-saints/" target="__blank"> {saint.name} </a>
+                                        <div className="flex"> <PiCrossLight className="mr-1"/> <a href="https://acoci86.github.io/daily-saints/" target="__blank"> {saint.name} </a></div>
                                     </li>
                                 ))}
                             </ul>
