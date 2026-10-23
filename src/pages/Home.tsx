@@ -1,6 +1,5 @@
 import Hero from '../components/Hero';
 import Projects from '../components/Projects'
-import Footer from '../components/Footer';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import { Link } from 'react-router-dom';
@@ -23,7 +22,6 @@ function Home(){
             </div>
         
         <Projects />
-        <Footer />
         </>
         
 

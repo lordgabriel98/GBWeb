@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 import AllProjects from "../components/AllProjects";
 
 import {motion} from "motion/react";
@@ -20,7 +19,6 @@ function Projects(){
 
         <AllProjects />
 
-        <Footer />
         </>
         
         

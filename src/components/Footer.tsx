@@ -49,7 +49,7 @@ function Footer() {
 
     return (
         <footer className="
-            mx-auto
+            shrink-0
             flex
             flex-col
             sm:flex-row

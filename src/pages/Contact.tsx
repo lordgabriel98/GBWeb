@@ -1,4 +1,3 @@
-import Footer from "../components/Footer";
 
 import { IoPaperPlaneOutline } from "react-icons/io5";
 
@@ -176,7 +175,6 @@ const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("
         
 
 
-        <Footer />
         </>
     );
 }
